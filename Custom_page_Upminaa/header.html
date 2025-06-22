@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpMinaa | Streamer & Cosplayer</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Metadatos -->
+    <meta name="theme-color" content="#FF4D8D">
+    <meta name="title" content="UpMinaa | Streamer & Cosplayer">
+    <meta name="description" content="Página oficial de UpMinaa, streamer en Twitch especializada en Just Chatting, cosplay y contenido anime.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://upminaa.com/">
+    <meta property="og:title" content="UpMinaa | Streamer & Cosplayer">
+    <meta property="og:description" content="Página oficial de UpMinaa, streamer en Twitch especializada en Just Chatting, cosplay y contenido anime.">
+    <meta property="og:image" content="https://upminaa.com/images/upminaa-banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://upminaa.com/">
+    <meta property="twitter:title" content="UpMinaa | Streamer & Cosplayer">
+    <meta property="twitter:description" content="Página oficial de UpMinaa, streamer en Twitch especializada en Just Chatting, cosplay y contenido anime.">
+    <meta property="twitter:image" content="https://upminaa.com/images/upminaa-banner.jpg">
+
+    <style>
+        /* Estilos específicos para corregir el header */
+        .hero {
+            background: none !important;
+            height: auto !important;
+            min-height: unset !important;
+            max-height: unset !important;
+            position: relative !important;
+            display: block !important;
+            grid-template-rows: unset !important;
+            color: #333 !important;
+            padding: 20px 0 !important;
+            clip-path: none !important;
+        }
+        
+        .hero::before {
+            display: none !important;
+        }
+        
+        .nav {
+            position: relative !important;
+            height: auto !important;
+            padding: 10px 0 !important;
+            margin-bottom: 0 !important;
+        }
+        
+        .nav__title {
+            color: var(--primary-color) !important;
+        }
+        
+        .nav__links {
+            color: #333 !important;
+        }
+        
+        /* Asegurar que los elementos del menú sean clickables */
+        .nav__link {
+            position: relative !important;
+            pointer-events: all !important;
+            opacity: 1 !important;
+            height: auto !important;
+        }
+        
+        /* Ajustar alineación del menú */
+        .nav__link--menu {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: flex-end !important;
+            align-items: center !important;
+            background-color: transparent !important;
+        }
+        
+        /* Ocultar botón de cierre en vista normal */
+        .nav__close {
+            display: none !important;
+        }
+
+        /* Estilos específicos para móvil */
+        @media (max-width: 800px) {
+            .nav__menu {
+                display: block !important;
+            }
+            
+            .nav__link--menu {
+                position: fixed !important;
+                background-color: var(--dark-color) !important;
+                top: 0 !important;
+                left: 0 !important;
+                height: 100% !important;
+                width: 100% !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: space-evenly !important;
+                align-items: center !important;
+                z-index: 100 !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+                transition: .7s opacity !important;
+            }
+            
+            .nav__link--show {
+                opacity: 1 !important;
+                pointer-events: unset !important;
+            }
+            
+            .nav__close {
+                position: absolute !important;
+                top: 30px !important;
+                right: 30px !important;
+                width: 30px !important;
+                cursor: pointer !important;
+            }
+            
+            .nav__links {
+                color: white !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">UpMinaa</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="../index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Pages/sobre_mi.html" class="nav__links">Sobre mí</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Pages/horarios.html" class="nav__links">Horarios</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Pages/cosplays.html" class="nav__links">Cosplays</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../Pages/contacto.html" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="../images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="../images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Aquí iría el contenido de tu página -->
+
+    <script>
+        // Script para hacer funcionar el menú móvil
+        const navMenu = document.querySelector('.nav__menu');
+        const navLink = document.querySelector('.nav__link--menu');
+        const navClose = document.querySelector('.nav__close');
+        
+        navMenu.addEventListener('click', () => {
+            navLink.classList.add('nav__link--show');
+        });
+        
+        navClose.addEventListener('click', () => {
+            navLink.classList.remove('nav__link--show');
+        });
+    </script>
+</body>
+</html>

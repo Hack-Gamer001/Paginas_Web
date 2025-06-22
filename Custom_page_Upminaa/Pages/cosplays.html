@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosplays - UpMinaa | Streamer & Cosplayer</title>
+    <meta name="description" content="Galería de cosplays de UpMinaa. Transformaciones de personajes de anime y videojuegos con detalles del proceso creativo.">
+    
+    <!-- Favicon y estilos -->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <!-- Metadatos para redes sociales -->
+    <meta property="og:title" content="Cosplays - UpMinaa | Streamer & Cosplayer">
+    <meta property="og:description" content="Galería de cosplays de UpMinaa. Transformaciones de personajes de anime y videojuegos con detalles del proceso creativo.">
+    <meta property="og:image" content="https://upminaa.com/images/upminaa-cosplay.jpg">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header se cargará dinámicamente -->
+    <div id="header"></div>
+
+    <!-- SECCIÓN DE COSPLAYS -->
+    <main class="container cosplays-container">
+        <section class="cosplay-section">
+            <h1 class="section-title">Mi Galería de Cosplays <span class="emoji">✨</span></h1>
+            <p class="section-subtitle">Transformaciones de personajes de anime y videojuegos</p>
+            
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+                <button class="filter-btn" data-filter="videojuegos">Videojuegos</button>
+                <button class="filter-btn" data-filter="originales">Originales</button>
+            </div>
+            
+            <div class="cosplay-grid">
+                <!-- Cosplay 1 -->
+                <div class="cosplay-card" data-category="anime">
+                    <div class="cosplay-image">
+                        <img src="../upm_img/upm_img_14.png" alt="Cosplay de Nino Nakano" class="cosplay-img">
+                        <div class="cosplay-overlay">
+                            <div class="overlay-content">
+                                <h3>Nino Nakano</h3>
+                                <p>Cosplay completo con peluca estilo anime y con estilo deportista</p>
+                                <span class="cosplay-date">Junio 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cosplay-info">
+                        <div class="cosplay-meta">
+                            <span class="cosplay-category anime">Anime</span>
+                            <span class="cosplay-time">30 horas de trabajo</span>
+                        </div>
+                        <a href="#" class="btn btn-cosplay">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Cosplay 2 -->
+                <div class="cosplay-card" data-category="videojuegos">
+                    <div class="cosplay-image">
+                        <img src="../upm_img/upm_img_17.png" alt="Cosplay de Yae Miko - Genshin Impact" class="cosplay-img">
+                        <div class="cosplay-overlay">
+                            <div class="overlay-content">
+                                <h3>Yae Miko - Genshin Impact</h3>
+                                <p>Recreación detallada con armamento y maquillaje característico</p>
+                                <span class="cosplay-date">Abril 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cosplay-info">
+                        <div class="cosplay-meta">
+                            <span class="cosplay-category videojuegos">Videojuego</span>
+                            <span class="cosplay-time">45 horas de trabajo</span>
+                        </div>
+                        <a href="#" class="btn btn-cosplay">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Cosplay 3 -->
+                <div class="cosplay-card" data-category="anime">
+                    <div class="cosplay-image">
+                        <img src="../upm_img/upm_img_21.png" alt="Cosplay de Michael Kaiser" class="cosplay-img">
+                        <div class="cosplay-overlay">
+                            <div class="overlay-content">
+                                <h3>Michael Kaiser - Blue Lock</h3>
+                                <p>Incluye detalles de deportivos de la serie Blue Lock</p>
+                                <span class="cosplay-date">Febrero 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cosplay-info">
+                        <div class="cosplay-meta">
+                            <span class="cosplay-category anime">Anime</span>
+                            <span class="cosplay-time">25 horas de trabajo</span>
+                        </div>
+                        <a href="#" class="btn btn-cosplay">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Cosplay 4 -->
+                <div class="cosplay-card" data-category="originales">
+                    <div class="cosplay-image">
+                        <img src="../upm_img/upm_img_20.png" alt="Cosplay Ellen Joe - Zenless Zone Zero" class="cosplay-img">
+                        <div class="cosplay-overlay">
+                            <div class="overlay-content">
+                                <h3>Ellen Joe</h3>
+                                <p>Cosplay de Ellen Joe basado en el videojuego ZZZ donde la personaje es un tiburon</p>
+                                <span class="cosplay-date">Diciembre 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cosplay-info">
+                        <div class="cosplay-meta">
+                            <span class="cosplay-category originales">Original</span>
+                            <span class="cosplay-time">60 horas de trabajo</span>
+                        </div>
+                        <a href="#" class="btn btn-cosplay">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cosplay-cta">
+                <p>¿Quieres ver el proceso de creación de estos cosplays?</p>
+                <a href="https://twitch.tv/upminaa" target="_blank" class="btn btn-primary">Únete a mis streams de cosplay</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer se cargará dinámicamente -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/loadHeader.js"></script>
+    <script src="../js/loadFooter.js"></script>
+    <script src="../js/cosplayFilter.js"></script>
+    
+    <style>
+        body {
+        background-color: white; /* Establece el fondo de la página a blanco */
+    }
+        /* ======================
+        ESTILOS PÁGINA COSPLAYS
+        ====================== */
+        .cosplays-container {
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .cosplay-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .category-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .filter-btn {
+            padding: 8px 20px;
+            border-radius: 50px;
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .cosplay-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .cosplay-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cosplay-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cosplay-image {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+        
+        .cosplay-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .cosplay-card:hover .cosplay-img {
+            transform: scale(1.05);
+        }
+        
+        .cosplay-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 77, 141, 0.8);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .cosplay-card:hover .cosplay-overlay {
+            opacity: 1;
+        }
+        
+        .overlay-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .overlay-content p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .cosplay-date {
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .cosplay-info {
+            padding: 20px;
+        }
+        
+        .cosplay-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .cosplay-category {
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-weight: 600;
+        }
+        
+        .cosplay-category.anime {
+            background: var(--light-color);
+            color: var(--primary-color);
+        }
+        
+        .cosplay-category.videojuegos {
+            background: #e6f7ff;
+            color: #0066cc;
+        }
+        
+        .cosplay-category.originales {
+            background: #f0e6ff;
+            color: #6600cc;
+        }
+        
+        .btn-cosplay {
+            display: block;
+            text-align: center;
+            padding: 8px 15px;
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cosplay:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .cosplay-cta {
+            margin-top: 60px;
+            text-align: center;
+            padding: 30px;
+            background: var(--light-color);
+            border-radius: 15px;
+        }
+        
+        .cosplay-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .cosplay-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cosplay-image {
+                height: 350px;
+            }
+        }
+    </style>
+</body>
+</html>

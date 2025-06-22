@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios - UpMinaa | Streamer & Cosplayer</title>
+    <meta name="description" content="Horarios de transmisión de UpMinaa en Twitch. Conoce cuándo ver los streams de Just Chatting, gaming y cosplay.">
+    
+    <!-- Favicon y estilos -->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <!-- Metadatos para redes sociales -->
+    <meta property="og:title" content="Horarios - UpMinaa | Streamer & Cosplayer">
+    <meta property="og:description" content="Horarios de transmisión de UpMinaa en Twitch. Conoce cuándo ver los streams de Just Chatting, gaming y cosplay.">
+    <meta property="og:image" content="https://upminaa.com/images/upminaa-banner.jpg">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Header se cargará dinámicamente -->
+    <div id="header"></div>
+
+    <!-- SECCIÓN DE HORARIOS -->
+    <main class="container schedule-container">
+        <section class="schedule-section">
+            <h1 class="section-title">Mis Horarios de Streaming <span class="emoji">⏰</span></h1>
+            <p class="schedule-subtitle">Conoce los días y horarios en los que transmito en Twitch</p>
+            
+            <div class="schedule-grid">
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <h2>Miércoles</h2>
+                        <div class="day-icon">📺</div>
+                    </div>
+                    <div class="schedule-details">
+                        <p class="schedule-time">19:00 - 23:00 CET</p>
+                        <p class="schedule-type">Just Chatting & Juegos</p>
+                        <p class="schedule-desc">Charlas divertidas y gameplay variado con interacción directa</p>
+                    </div>
+                </div>
+                
+                <div class="day-schedule highlight">
+                    <div class="day-header">
+                        <h2>Sábados</h2>
+                        <div class="day-icon">🎮</div>
+                    </div>
+                    <div class="schedule-details">
+                        <p class="schedule-time">18:30 - 00:30 CET</p>
+                        <p class="schedule-type">Maratón de Juegos</p>
+                        <p class="schedule-desc">Sesiones extendidas de gaming con la comunidad</p>
+                    </div>
+                </div>
+                
+                <div class="day-schedule">
+                    <div class="day-header">
+                        <h2>Domingos</h2>
+                        <div class="day-icon">👗</div>
+                    </div>
+                    <div class="schedule-details">
+                        <p class="schedule-time">19:00 - 22:00 CET</p>
+                        <p class="schedule-type">Cosplay & Community</p>
+                        <p class="schedule-desc">Proceso de cosplay y tiempo especial con el MinaaVerse</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="schedule-notice">
+                <p>⚠️ Los horarios pueden variar ocasionalmente. Sígueme en <a href="https://twitch.tv/upminaa" target="_blank">Twitch</a> para recibir notificaciones.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer se cargará dinámicamente -->
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="../js/loadHeader.js"></script>
+    <script src="../js/loadFooter.js"></script>
+    
+    <style>
+        body {
+        background-color: white; /* Establece el fondo de la página a blanco */
+    }
+        /* ======================
+        ESTILOS PÁGINA HORARIOS
+        ====================== */
+        .schedule-container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .schedule-section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .schedule-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 50px;
+        }
+        
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .day-schedule {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .day-schedule:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .day-schedule.highlight {
+            border: 2px solid var(--primary-color);
+            position: relative;
+        }
+        
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 15px;
+        }
+        
+        .day-schedule h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        
+        .day-icon {
+            font-size: 2rem;
+        }
+        
+        .schedule-details {
+            color: #333;
+        }
+        
+        .schedule-time {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .schedule-type {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .schedule-desc {
+            line-height: 1.6;
+            color: #666;
+        }
+        
+        .schedule-notice {
+            margin-top: 50px;
+            text-align: center;
+            padding: 15px;
+            background-color: var(--light-color);
+            border-radius: 10px;
+            color: #555;
+        }
+        
+        .schedule-notice a {
+            color: var(--primary-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .schedule-notice a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .schedule-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
