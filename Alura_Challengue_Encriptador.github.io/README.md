@@ -1,13 +1,15 @@
-![concluido-es](https://github.com/Hack-Gamer001/Challengue-Encriptador/assets/119648000/18f6d3a2-4948-4ba8-9c8d-a3c068390439)
+post que encripta las palabras escritas y puede desencriptar
 
+![image](https://github.com/user-attachments/assets/ca5af54d-9a9b-4c0d-aca3-154306aeeadd)
 
-![pruebas y finalizacion trello](https://github.com/Hack-Gamer001/Challengue-Encriptador/assets/119648000/f04c13b9-737f-4939-bfa3-260a38acfee4)
+pruebas y finalizacion trello
+![image](https://github.com/user-attachments/assets/497ae001-bdf8-4ccf-b2dd-ebd2bf892b5e)
+
 
 
 Mensaje final
 
-![image](https://github.com/Hack-Gamer001/Challengue-Encriptador/assets/119648000/698556e6-bcf1-426c-b052-a2b8e9d1d795)
-
+![image](https://github.com/user-attachments/assets/a3802507-83ba-455a-9fbc-6c9155cb224b)
 
 
 
@@ -15,5 +17,5 @@ video demostracion
 
 
 
-https://github.com/Hack-Gamer001/Alura-Challengue-Encriptador/assets/119648000/0bbc2186-1769-47fb-a684-31b5306ff149
+https://github.com/user-attachments/assets/1f2ce621-9ffd-4f1c-80ed-fb1b45bb7ee1
 
