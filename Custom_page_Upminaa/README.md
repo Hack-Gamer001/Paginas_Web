@@ -1,3 +1,5 @@
 enlace de la pagina
 
-https://custom-page-upminaa.vercel.app/
+https://paginas-jg0qda8ji-hack-gamer001s-projects.vercel.app/
+
+https://paginas-web-pi.vercel.app/
