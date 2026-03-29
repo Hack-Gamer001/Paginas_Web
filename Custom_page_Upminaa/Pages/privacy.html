@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - minaa_w_z_0</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Raleway:wght@300;400;500&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d0d1a;
+      color: #e0d6f5;
+      font-family: 'Raleway', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Fondo animado con partículas */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(120, 60, 200, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(200, 60, 120, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 80%, rgba(60, 120, 200, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+      padding: 80px 20px 60px;
+      border-bottom: 1px solid rgba(180, 120, 255, 0.2);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 200px; height: 1px;
+      background: linear-gradient(90deg, transparent, #b47eff, transparent);
+    }
+
+    .crown {
+      font-size: 48px;
+      margin-bottom: 16px;
+      display: block;
+      filter: drop-shadow(0 0 12px rgba(180, 120, 255, 0.8));
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(24px, 5vw, 42px);
+      font-weight: 600;
+      background: linear-gradient(135deg, #e0b0ff, #ff80c0, #80c0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .hero .handle {
+      font-size: 16px;
+      color: rgba(180, 120, 255, 0.8);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .hero .tagline {
+      margin-top: 16px;
+      font-size: 14px;
+      color: rgba(224, 214, 245, 0.5);
+      font-style: italic;
+    }
+
+    .container {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      z-index: 1;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(180, 120, 255, 0.15);
+      border-radius: 16px;
+      padding: 40px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+
+    .card:hover {
+      border-color: rgba(180, 120, 255, 0.35);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px; height: 100%;
+      background: linear-gradient(180deg, #b47eff, #ff80c0);
+      border-radius: 3px 0 0 3px;
+    }
+
+    .card-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .card h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #d4a8ff;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(224, 214, 245, 0.75);
+      font-weight: 300;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-top: 12px;
+    }
+
+    .card ul li {
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(224, 214, 245, 0.75);
+      padding-left: 20px;
+      position: relative;
+      font-weight: 300;
+    }
+
+    .card ul li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: #b47eff;
+      font-size: 10px;
+      top: 6px;
+    }
+
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .platform-tag {
+      background: rgba(180, 120, 255, 0.1);
+      border: 1px solid rgba(180, 120, 255, 0.25);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 13px;
+      color: #d4a8ff;
+      letter-spacing: 0.5px;
+    }
+
+    .highlight {
+      color: #ff80c0;
+      font-weight: 500;
+    }
+
+    .contact-card {
+      text-align: center;
+      background: linear-gradient(135deg, rgba(180, 120, 255, 0.08), rgba(255, 128, 192, 0.06));
+      border: 1px solid rgba(255, 128, 192, 0.2);
+    }
+
+    .contact-card::before {
+      background: linear-gradient(180deg, #ff80c0, #b47eff);
+    }
+
+    .contact-card a {
+      color: #ff80c0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .contact-card a:hover { color: #ffb0d8; }
+
+    .divider {
+      text-align: center;
+      margin: 8px 0 32px;
+      color: rgba(180, 120, 255, 0.3);
+      letter-spacing: 8px;
+      font-size: 12px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 1px solid rgba(180, 120, 255, 0.1);
+      color: rgba(224, 214, 245, 0.3);
+      font-size: 13px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer span {
+      color: rgba(180, 120, 255, 0.5);
+    }
+
+    .last-updated {
+      display: inline-block;
+      background: rgba(180, 120, 255, 0.08);
+      border: 1px solid rgba(180, 120, 255, 0.15);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: rgba(180, 120, 255, 0.6);
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <span class="crown">👑</span>
+    <h1>Privacy Policy</h1>
+    <p class="handle">@minaa_w_z_0</p>
+    <p class="tagline">Cosplayer · Content Creator · Digital Artist</p>
+  </div>
+
+  <div class="container">
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <div class="card">
+      <span class="card-icon">🎭</span>
+      <h2>About This Application</h2>
+      <p>
+        This application is a personal content publishing tool used exclusively by
+        <span class="highlight">minaa_w_z_0</span> to share cosplay photos, videos,
+        and creative content across social media platforms. It is not a public service
+        and is not available to third parties.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="card-icon">📸</span>
+      <h2>Content We Publish</h2>
+      <p>All content published through this tool is original creative work owned by minaa_w_z_0, including:</p>
+      <ul>
+        <li>Cosplay photography and videos</li>
+        <li>Character recreations and costume showcases</li>
+        <li>Behind-the-scenes content and creative process</li>
+        <li>Event coverage and convention content</li>
+      </ul>
+      <div class="platforms">
+        <span class="platform-tag">📌 Pinterest</span>
+        <span class="platform-tag">📸 Instagram</span>
+        <span class="platform-tag">▶️ YouTube</span>
+        <span class="platform-tag">📱 TikTok</span>
+        <span class="platform-tag">📘 Facebook</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-icon">🔒</span>
+      <h2>Data & Privacy</h2>
+      <p>This application does <span class="highlight">not collect, store, or share</span> any personal data from users or visitors. Specifically:</p>
+      <ul>
+        <li>No tracking cookies are used</li>
+        <li>No user data is sold or shared with advertisers</li>
+        <li>No personal information is collected from visitors</li>
+        <li>All published content is public and owned by minaa_w_z_0</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="card-icon">⚖️</span>
+      <h2>Intellectual Property</h2>
+      <p>
+        All cosplay content, photos, and videos published through this application are the
+        creative property of <span class="highlight">minaa_w_z_0</span>. Character designs
+        referenced in cosplay content belong to their respective original creators and are
+        used for non-commercial fan art purposes only.
+      </p>
+    </div>
+
+    <div class="card contact-card">
+      <span class="card-icon">✉️</span>
+      <h2>Contact</h2>
+      <p>
+        For any questions regarding this privacy policy or content ownership,
+        please reach out at:<br><br>
+        <a href="mailto:tefam80571@jsncos.com">tefam80571@jsncos.com</a>
+      </p>
+      <br>
+      <span class="last-updated">Last updated: March 2026</span>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>© 2026 <span>minaa_w_z_0</span> · All rights reserved</p>
+    <p style="margin-top:6px">Made with 💜 for the cosplay community</p>
+  </div>
+
+</body>
+</html>
